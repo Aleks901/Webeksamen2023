@@ -1,0 +1,434 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+html {
+    font-size: calc(1em + 1vw);
+}
+
+header {
+    padding: 1rem 0.5rem;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    background-image: url(https://cdn.pixabay.com/photo/2016/03/26/13/09/workspace-1280538_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+
+footer {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 3;
+}
+
+img {
+    display: flex;
+    max-width: 370px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    margin-right: 5px;
+}
+
+iframe {
+    max-width: 360px;
+    max-height: 360px;
+}
+
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "Header" "Main" "Footer";
+}
+
+#navigasjons-meny {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-knapper {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
+
+#knapp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#compeling-h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(180, 179, 177);
+    min-width: none;
+}
+
+#readmore-btn1 {
+    padding: 10px;
+    margin: 0px 0px 10px 0px;
+    background-color: rgb(238, 185, 39);
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.btn {
+    border: 1px solid #000;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    text-decoration: none;
+}
+
+.btn1 {
+    color: #000;
+    background: rgb(252, 165, 3);
+}
+
+.btn1:hover {
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #fff;
+}
+
+
+#engaging-s {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#about-c {
+    display: flex;
+    border: 1px solid #000;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.btn2 {
+    color: #000;
+    background-color: #fff;
+    width: min-content;
+}
+
+.btn2:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+#services-container {
+    background-color: rgb(180, 179, 177);
+}
+
+#services-container h2 {
+    margin-top: 0px;
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#newsletter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+}
+
+#femail {
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.btn3 {
+    color: #000;
+    background: rgb(252, 165, 3)
+}
+
+.btn3:hover {
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #fff;
+}
+
+
+#footer_area {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+}
+
+#socials a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+    padding-left: 5px;
+}
+
+#portfolio-section-bg{
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/27/21/42/stock-1863880_1280.jpg);
+    background-size: cover;
+    align-items: center;
+    padding: 100px;
+    color: #fff;
+    background-repeat: no-repeat;
+}
+
+#branding-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#design-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dev-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-sect {
+    display: flex;
+    background-image: url(https://cdn.pixabay.com/photo/2017/10/12/22/17/business-2846221_1280.jpg);
+    background-size: cover;
+    overflow: hidden;
+    justify-content: end;
+    padding: 10px;
+}
+
+#about-art {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(180, 179, 177, 0.8);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.article-card {
+    max-width: 350px;
+    min-width: 200px;
+}
+
+.btn4 {
+    color: #000;
+    background: rgb(252, 165, 3);
+    max-width: 210px;
+}
+
+.btn4:hover {
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #fff;
+}
+
+#services-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.service-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#some-clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(252, 165, 3);
+    padding: 10px 0px 10px 0px;
+}
+
+#msg-form {
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+    padding-right: 10px;
+}
+
+#wname, #subject {
+    max-width: 350px;
+    min-height: 30px;
+}
+
+#message {
+    max-width: 350px;
+    min-height: 200px;
+}
+
+#contact-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    padding-left: 20px;
+    max-width: 350px;
+}
+
+#map-container {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 600px) {
+
+    header {
+        grid-column: 1 / span 3;
+    }
+
+    main {
+        grid-column: 1 / span 3;
+    }
+
+    footer {
+        grid-column: 1 / span 3;
+    }
+
+    img {
+        max-width: none;
+    }
+
+    iframe {
+        max-width: none;
+        max-height: none;
+        min-width: 1000px;
+    }
+
+    #footer_area {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 50px 0px 50px;
+    }
+
+    #services {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 50px;
+        list-style: none;
+    }
+
+    #newsletter {
+        padding: 0px 300px 0px 300px;
+        flex-wrap: nowrap;
+        min-width: 815px;
+    }
+
+    
+    #grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "Header Header Header" "Main Main Main" "Footer Footer Footer";
+    }
+
+    #navigasjons-meny {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #knapp-container {
+        flex-direction: row;
+    }
+
+    #about-c {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .article-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #branding-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #design-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #dev-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #services-about{
+        flex-direction: row;
+    }
+    
+    #some-clients {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    #contact-area {
+        flex-direction: row;
+    }
+    
+}
