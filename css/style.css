@@ -249,6 +249,12 @@ iframe {
     background-repeat: no-repeat;
 }
 
+#previous-jobs-knapper {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+}
+
 #branding-container {
     display: flex;
     flex-direction: column;
@@ -302,7 +308,7 @@ iframe {
 .btn4 {
     color: #000;
     background: #e6bd43;
-    max-width: 210px;
+    max-width: 220px;
 }
 
 .btn4:hover {
@@ -449,6 +455,10 @@ iframe {
     .article-card {
         display: flex;
         flex-direction: column;
+    }
+
+    #previous-jobs-knapper {
+        flex-direction: row;
     }
 
     #branding-container {
