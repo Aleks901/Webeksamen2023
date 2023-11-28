@@ -1,3 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Dette er mitt eget orginale arbeid, et arbeid gjort selvstendig og et arbeid jeg er stolt av. */
+
+/* Det eneste som avviker fra jeg har lært i løpet av pensum er måten jeg legger opp elementer i grid.
+   Dette er noe jeg lærte fra chatGPT i forrige arbeidskrav, og har derfor fortsatt å bruke det på den måten.
+
+   Css arket skal etter min beste evne ha blitt lagt opp på en måte som følger sidene fra top til bunn fra første
+   til siste side. Dette er gjort for å få best mulig struktur på arket. (Mulig dette avviker i media query)
+
+   Navn på klasser og id'er er valgt utifra innholdet de styrer.
+
+   Bilder er hentet fra: 
+
+   https://pixabay.com/ og https://placehold.co/ 
+
+    Ideelt ville jeg selvfølgelig ha lastet ned bilder.
+   */
+
 * {
     box-sizing: border-box;
 }
@@ -26,9 +46,10 @@ header {
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     background-color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 1600px;
 }
 
 main {
@@ -97,13 +118,15 @@ iframe {
 #readmore-btn1 {
     padding: 10px;
     margin: 0px 0px 10px 0px;
-    background-color: rgb(238, 185, 39);
+    background-color: #e6bd43;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: #000;
     cursor: pointer;
 }
+
+/* Knapp klassen styrer hvordan alle knapper skal bygges opp */
 
 .btn {
     border: 1px solid #000;
@@ -115,10 +138,14 @@ iframe {
     text-decoration: none;
 }
 
+/* Kan så lage en egen knapp ved bruk av knapp klassen */
+
 .btn1 {
     color: #000;
-    background: rgb(252, 165, 3);
+    background: #e6bd43;
 }
+
+/* Hover effekter er lagt på knapper slik */
 
 .btn1:hover {
     color: #fff;
@@ -185,7 +212,7 @@ iframe {
 
 .btn3 {
     color: #000;
-    background: rgb(252, 165, 3)
+    background: #e6bd43
 }
 
 .btn3:hover {
@@ -247,6 +274,8 @@ iframe {
     padding: 10px;
 }
 
+/* Rgba brukes for å lage gjennomsiktig bakgrunn. */
+
 #about-art {
     display: flex;
     flex-direction: column;
@@ -256,13 +285,21 @@ iframe {
 }
 
 .article-card {
-    max-width: 350px;
+    flex-basis: 200px;
+    max-width: 692px;
     min-width: 200px;
+    flex-grow: 0.5;
+    transition: flex-basis 0.3s ease;
+    margin: 10px;
+}
+
+.article-card:hover {
+    flex-basis: 450px;
 }
 
 .btn4 {
     color: #000;
-    background: rgb(252, 165, 3);
+    background: #e6bd43;
     max-width: 210px;
 }
 
@@ -284,14 +321,24 @@ iframe {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
+}
+
+.service-article p {
+    margin-top: 0;
 }
 
 #some-clients {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(252, 165, 3);
-    padding: 10px 0px 10px 0px;
+    background-color: #e6bd43;
+    padding: 50px;
+
+}
+
+.clients-pics {
+    margin: 10px;
 }
 
 #msg-form {
@@ -330,6 +377,8 @@ iframe {
     justify-content: center;
 }
 
+/* Media query fra Mobil til PC */
+
 @media only screen and (min-width: 600px) {
 
     header {
@@ -359,7 +408,7 @@ iframe {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 0px 50px 0px 50px;
+        padding: 35px;
     }
 
     #services {

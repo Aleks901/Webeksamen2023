@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Font awesome stylesheets --> 
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
     <title>About</title>
 </head>
 <body>
+    <!-- Grid container. 1 Kolonne på mobil, 3 på pc. -->
     <div id="grid-container">
         <header>
             <nav id="navigasjons-meny">
+                <!-- Logo bilde med link home -->
                 <a href="index.html">
                     <img src="img/logo1.png" id="logo" alt="Bilde av Logo">
                 </a>
+                <!-- Meny punkter -->
                 <ul id="knapp-container">
                     <a href="index.html" class="nav-knapper">Home</a>
                     <a href="products.html" class="nav-knapper">Portfolio</a>
@@ -24,6 +30,7 @@
         </header>
 
         <main>
+            <!-- Sections for portfolio -->
             <section id="about-sect">
                 <article id="about-art">
                     <p>Company name</p>
@@ -35,23 +42,27 @@
 
             <h2>Our services</h2>
             <section id="services-about">
-
+                <!-- Ikoner fra fontawesome https://fontawesome.com/ -->
                 <article class="service-article">
+                    <i class="fa-solid fa-users fa-xl"></i>
                     <h4>Branding</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </article>
 
                 <article class="service-article">
+                    <i class="fa-solid fa-cloud-arrow-up fa-xl"></i>
                     <h4>Branding</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </article>
 
                 <article class="service-article">
+                    <i class="fa-solid fa-code fa-xl"></i>
                     <h4>Branding</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </article>
 
                 <article class="service-article">
+                    <i class="fa-solid fa-wifi fa-xl"></i>
                     <h4>Branding</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </article>
@@ -59,9 +70,9 @@
 
             <h2>Some of our clients</h2>
             <section id="some-clients">
-                <img src="img/logo1.png" alt="Bilde av Logo">
-                <img src="img/logo2.png" alt="Bilde av Logo">
-                <img src="img/logo3.png" alt="Bilde av Logo">
+                <img src="img/logo1.png" alt="Bilde av Logo" class="clients-pics">
+                <img src="img/logo2.png" alt="Bilde av Logo" class="clients-pics">
+                <img src="img/logo3.png" alt="Bilde av Logo" class="clients-pics">
             </section>
 
             <h2>Contact us</h2>
@@ -90,16 +101,24 @@
             </section>
         </main>
 
+        <!-- Footer med linker til sosiale medier -->
         <footer>
             <section id="footer_area">
                 <a href="index.html">
                     <img src="img/logo1.png" alt="Bilde av Logo">
                 </a>
                 <h3>Company copyright 2023</h3>
+                <!-- Ikoner fra fontawesome https://fontawesome.com/ -->
                 <nav id="socials">
-                    <a href="#">facebook</a>
-                    <a href="#">instagram</a>
-                    <a href="#">linkdin</a>
+                    <a href="https://www.facebook.com/">
+                        <i class="fa-brands fa-facebook fa-xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <i class="fa-brands fa-instagram fa-xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/">
+                        <i class="fa-brands fa-linkedin fa-xl"></i>
+                    </a>
                 </nav>
             </section>
         </footer>
