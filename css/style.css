@@ -75,12 +75,15 @@ ul {
 
 li {
     margin-right: 5px;
+    list-style: none;
 }
 
 iframe {
     max-width: 360px;
     max-height: 360px;
 }
+
+
 
 
 #grid-container {
@@ -106,6 +109,10 @@ iframe {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#knapp-container li {
+    margin-bottom: 15px;
 }
 
 #compeling-h {
